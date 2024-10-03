@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UserSecretsId>983e88e8-653a-4b4b-8014-3d476f43a543</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\Interface\**" />
+    <Content Remove="Model\Interface\**" />
+    <EmbeddedResource Remove="Model\Interface\**" />
+    <None Remove="Model\Interface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.96.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	<PackageReference Include="NLog" Version="4.7.15" />
+	  <PackageReference Include="Npgsql.OpenTelemetry" Version="8.0.2" />
+	  <PackageReference Include="OpenTelemetry" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.Api" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.Api.ProviderBuilderExtensions" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.AutoInstrumentation" Version="1.4.0" />
+	  <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.8.0" />
+	  <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.8.1" />
+	  <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.8.1" />
+	  <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.7.0" />
+	  <PackageReference Include="OpenTelemetry.Instrumentation.Process" Version="0.5.0-beta.4" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+  </ItemGroup>
+
+</Project>
